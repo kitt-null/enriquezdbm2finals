@@ -1,0 +1,38 @@
+
+body{font-family: 'Abyssinica SIL';font-size: larger;}
+
+.body{text-align: center; justify-content: center;}
+
+.h1{font-size: 50px;font-family: 'Alegreya SC';border-bottom: 10px solid #FADA5E;width: 100%;font-weight: bold;}
+
+h4, h5{font-family: 'Alegreya SC';}
+
+.tbl{margin: 0 30px 0 30px;max-height: 250px; height: 250px; overflow-y: scroll;}
+.tbl::-webkit-scrollbar {width: 1px;}
+
+tr{border-bottom: 1px solid #88aed0;}
+
+th{ background-color: #4169e181; width: 20rem; font-family: 'Acme';}
+
+.bar{height: 10px;width: 100%;background-color:#FADA5E;}
+
+.aft {border-right: 1px solid #4169e181;border-left: 1px solid #4169e181;}
+
+.bef, #e{ border-left: 1px solid #4169e181;}
+
+.md{ border-right: 1px solid #4169e181; border-left: 1px solid #4169e181;}
+
+.a {color: #00008B;}
+
+.addbtn{border-radius: 10px; padding: 2px 5px 2px 5px; margin-bottom: 5px; background-color: #88aed0; border: 4px solid #88aed0;}
+
+.input { border-radius: 10px; font-size: 20px; padding: 5px; margin: 5px; border: 1px solid #FADA5E; font-family: 'Alegreya Sans'; background-color: #FADA5E;}
+
+.input::placeholder{color: rgba(0, 0, 0, 0.711); font-style: italic;}
+
+.tbl2{margin: 0 30px 0 30px;max-height: 200px; height: 200px; overflow-y: scroll;padding-left: 25%;}
+.tbl2::-webkit-scrollbar {width: 1px;}
+
+.btn{border: 1px solid #00008B; border-radius: 10px; padding: 2px 5px 2px 5px; margin-bottom: 5px;}
+
+.hh1{font-size: 50px;font-family: 'Alegreya SC';width: 100%;font-weight: bold;}
