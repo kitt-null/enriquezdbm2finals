@@ -44,12 +44,23 @@ class AttendeeController extends Controller
     public function edit($id)
     {
         $attendee = Attendee::find($id);
-        return view('attendee.edit',compact('attendee'));
+        return view('events.aedit',compact('attendee'));
     }
 
-    public function update(Request $request, Attendee $member)
+    public function update(Request $request, $id)
     {
-        //
+        $attendee = Attendee::find($id);
+
+        if($attendee){
+            $attendee->update($request->all());
+        }
+            $event = Event::find($request->event_id);
+            $attend = $event->attendees;
+        if(!$event){
+            abort(404);
+        }
+            $attendees = Attendee::where('event_id', $request->event_id)->get();
+        return view('events.show',[$request->events_id])->with(compact('attendees','event', 'attend'));
     }
 
     public function destroy($id)

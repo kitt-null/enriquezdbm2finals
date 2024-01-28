@@ -32,7 +32,7 @@
                         <tr>
                             <td class="aft">{{$i->name}}</td>
                             <td class="aft">
-                            {{-- <a href="{{route('events.editAttendee',[$i->id])}}">Edit</a> --}}
+                            <a href="{{route('attend.edit',[$i->id])}}" class="a">Edit</a>
                             <form action="{{route('attend.destroy',[$i->id])}}" method="POST">
                             @csrf
                             @method('DELETE')
@@ -50,6 +50,7 @@
         <form action="{{route('events.storeAttendee')}}" method="POST" class="pt-10">
             @csrf
             <div>
+                <h4>Add New Attendee</h4>
                 <input type="text" name="name" placeholder="Attendee Name" required autocomplete="off" class="input">
                 <input type="integer" id="event_id" name="event_id" value="{{$event->id}}" hidden>
                 <button type="submit" class="btn"> Add</button>

@@ -46,7 +46,7 @@
                         </tr>
                     @empty
                         <tr>
-                            <td colspan="4">NO DATA</td>
+                            <td colspan="4">NO UPCOMING EVENT</td>
                         </tr>
                     @endforelse    
                 </tbody>
